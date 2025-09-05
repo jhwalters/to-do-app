@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  margin: 0;
+  padding-top: 50px;
+}
+
+.list-container {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+.list-container h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-container input:focus {
+  border-color: #007bff;
+}
+
+.input-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.input-container button:hover {
+  background-color: #0056b3;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+}
+
+.task-list li input {
+  border: none;
+  font-size: 16px;
+}
+
+.task-list li span {
+  cursor: pointer;
+}
+
+.task-list li.completed span {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  color: #aaa;
+}
+
+.edit-btn, .save-btn {
+  color: #007bff;
+  border: none;
+  padding: 10px 15px;
+  background: transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.edit-btn:hover, .save-btn:hover {
+  color: #0056b3;
+}
+
+.edit-btn:active, .save-btn:active {
+  color: #007bff;
+}
+
+.delete-btn, .cancel-btn {
+  color: red;
+  border: none;
+  padding: 10px 15px;
+  background: transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.delete-btn:hover, .cancel-btn:hover {
+  color: #ce0000;
+}
+
+.delete-btn:active, .cancel-btn:active {
+  color: red;
+}
