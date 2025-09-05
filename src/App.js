@@ -79,6 +79,7 @@ function App() {
           placeholder="Add a new task..."
           value={input}
           onChange={(e) => setInput(e.target.value)}
+          onKeyDown={(e) => e.key === 'Enter' && addTask()}
         />
         <button onClick={addTask}>Add</button>
       </div>
@@ -92,6 +93,7 @@ function App() {
                   type="text"
                   value={editingText}
                   onChange={(e) => setEditingText(e.target.value)}
+                  onKeyDown={(e) => e.key === 'Enter' && saveEdit(index)}
                 />
                 <div className="btns">
                   <button onClick={() => saveEdit(index)} className="save-btn">Save</button>
